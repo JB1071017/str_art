@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto; /* Changed from hidden to auto to allow scrolling */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#canvas-wrapper {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    overflow: auto; /* Enables scroll if content overflows */
+    max-height: 100vh;
+}
+
+#art-canvas {
+    max-width: 95%;
+    max-height: 95%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa !important;
+}
+
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#stepInfo {
+    border-left: 4px solid #0d6efd;
+}
+
+.step-active {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+/* Dark mode support */
+[data-bs-theme="dark"] .bg-body-tertiary {
+    background-color: #212529 !important;
+}
+
+[data-bs-theme="dark"] #canvas-wrapper {
+    background-color: #333;
+}
+
+[data-bs-theme="dark"] #stepInfo {
+    background-color: #2d3748 !important;
+    border-left-color: #3b82f6;
+}
+
+/* Responsive adjustments */
+@media (max-height: 600px) {
+    #canvas-wrapper {
+        overflow-y: auto;
+    }
+}
