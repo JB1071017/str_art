@@ -1,9 +1,9 @@
-# 🎨 The Mathematics of String Art
+#  The Mathematics of String Art
 *A Complete Mathematical and Theoretical Framework for Image-to-Thread Conversion*
 
 ---
 
-## 🧠 Abstract
+## Abstract
 
 **String art** is the mathematical process of representing curves and images using only straight threads.  
 This document explains how an image can be represented as a **matrix equation**, how threads correspond to vectors, and how optimization and geometry combine to produce smooth patterns from straight lines.
